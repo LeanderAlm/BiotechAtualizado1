@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #35465A;
+}
+
+.cabecalho{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.cabecalho__logo img {
+    height: 80px;
+}
+
+.cabecalho__pesquisar input[type="text"] {
+    margin-top: .6rem;
+    width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho__list {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__item {
+    padding-left: 2rem;
+}
+
+main{
+    background-color: #35465A;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.grupo::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: green;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20vw;
+    font-size: 18px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+      }
+
+    button:hover{
+        font-size: 20px;
+        transition: .6s;
+    }
+
+    .div__p{
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .div__p > p {
+        font-size: 18px;
+        font-weight:600
+    }
+
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        max-height: 80%;
+        overflow-y: auto;
+      }
+      
+      .form-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        overflow: hidden;
+      }
+      
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+      }
+      
+      input[type="text"],
+      input[type="date"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      .button__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      
+
+footer{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link__footer{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link__footer:hover{
+    transition: .9s;
+    font-size: 18px;
+}
+
+/* Adicionar margem inferior para os elementos de entrada (inputs) */
+.input-box input,
+.input-box select {
+    margin-bottom: 0.5rem;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5899D6;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0;
+  transition:  0.5s ease;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+}
+
+.title{
+  align-self: center;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5899D6;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0;
+  transition:  0.5s ease;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  border: 2px solid #FFFFFF; 
+}
+
+
+
+
+/* TUDO DE NOVO ESTA DAQUI PRA BAIXO   */
+
+.cabecalho__item{
+  padding: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.cabecalho__pesquisar{
+  display: none;
+}
+}

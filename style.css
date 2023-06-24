@@ -1,0 +1,38 @@
+body{
+    background-color: #F5F5F5;
+}
+
+#login{
+    
+    display: flex;
+    padding-top: 9em;
+    align-items: flex-start;
+  
+}
+   
+
+
+.div__img{
+    margin-left: 9rem;
+}
+
+.container{
+   
+    width: 50vw;
+}
+
+.img__login{
+    width: 30vw;
+    padding-left: em;
+}
+
+.login-box{
+    display: flex;
+
+}
+
+.h3__azul{text-align:   center;
+
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exame de Fezes</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><a href="../Pagina inicial/index.html"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></a></div>
+        <div >
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+              </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data"></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+            <li>
+                <div class="dropdown">
+                     <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                     <div class="dropdown-content">
+                       <a href="#">Menu Inicial</a>
+                       <a href="#">Digitar Pedidos</a>
+                       <a href="#">Exames Pendentes</a>
+             <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+ 
+                       
+                     </div>
+            </li>
+ 
+        </ul>
+</header>
+
+<main class="div__main">
+    <form id="exame-fezes-form" class="form__2-5">
+        <p class="h3-div2">Exame de Fezes</p>
+        <div class="form__div2-5">
+            <input type="text" name="consistencia" id="consistencia" class="input__div2-5" placeholder="Consistência" required>
+            <input type="text" name="cor" id="cor" class="input__div2-5" placeholder="Cor" required>
+            <input type="text" name="sangueoculto" id="sangueoculto" class="input__div2-5" placeholder="Sangue oculto" required>
+            <input type="text" name="leucocitosfezes" id="leucocitosfezes" class="input__div2-5" placeholder="Leucócitos" required>
+            <input type="text" name="vparasitas" id="vparasitas" class="input__div2-5" placeholder="VParasitas" required>
+            <input type="text" name="ovosparasitas" id="ovosparasitas" class="input__div2-5" placeholder="Ovos de parasitas" required>
+            <input type="text" name="bacterias" id="bacterias" class="input__div2-5" placeholder="Bactérias" required>
+        </div>
+        <button type="submit" class="button__div1">Validar</button>
+    </form>
+</main>
+
+
+    <footer>
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+            <div >
+        <ul>
+          <li><a href="#" class="link__footer">Contato</a></li>
+          <li><a href="#" class="link__footer">Quem somos</a></li>
+          <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+        </ul>
+    </footer>
+       <script type = 'module' src="../../controller/cadastroResultadoFezes-controller.js"></script>
+        <script src="js.js"></script>
+    </body>
+    </html>

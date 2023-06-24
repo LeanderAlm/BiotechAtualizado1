@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+    
+}
+
+.cabecalho{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__pesquisar{
+    margin-top: .5rem;
+   
+}
+
+
+.cabecalho__list{
+    display: flex;
+    margin: 1.5rem;
+    align-items: center;
+}
+
+.cabecalho__item{
+
+  padding-left: 2rem;
+}
+
+input[type="text"] {
+    margin-top: .6rem;
+    width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+main{
+    
+    background-color: #35465A;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+
+.link__footer{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link__footer:hover{
+    transition: .9s;
+    font-size: 18px;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt=""
+                height="80px"></div>
+        <div>
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+            </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data"></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+        </ul>
+    </header>
+
+
+
+    <main>
+
+        <div class="flexbox-item-8">
+            <div id="results" class="resultados"></div>
+            <a class="voltar-button" href="ABCDE.HTML">voltar</a>
+            <script>
+                const resultsList = document.getElementById('results')
+                new URLSearchParams(window.location.search).forEach((value, name) => {
+                    resultsList.append(`${name}: ${value}`)
+                    resultsList.append(document.createElement('br'))
+                })
+            </script>
+
+            <div class="flexbox-item flexbox-item-9">
+                <a class="tela-principal-button" href="telaprincipal.HTML">Confirmar Recoleta</a>
+            </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt=""
+                height="80px"></div>
+        <div>
+            <ul>
+                <li><a href="#" class="link__footer">Contato</a></li>
+                <li><a href="#" class="link__footer">Quem somos</a></li>
+                <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+            </ul>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   <header class="cabecalho">
+       <div class="cabecalho__logo">
+           <img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia (4).png" alt="logo" height="80">
+       </div>
+       <form class="cabecalho__pesquisar">
+           <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+       </form>
+       <ul class="cabecalho__list">
+           <li class="cabecalho__item data"></li>
+           <li class="cabecalho__item">
+               <div class="image__profile">
+                   <img src="user.png" alt="" height="35px">
+               </div>
+           </li>
+           <li class="cabecalho__item">SAIR</li>
+
+           <li>
+            <div class="dropdown">
+                 <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                 <div class="dropdown-content">
+                   <a href="#">Menu Inicial</a>
+                   <a href="#">Digitar Pedidos</a>
+                   <a href="#">Exames Pendentes</a>
+         <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+
+                   
+                 </div>
+        </li>
+       </ul>
+   </header>
+
+   <main class="main__form">
+    <title>Editar Paciente</title>
+       <h1>Editar Paciente</h1>
+       <form data-form>
+        <div class="form-container">
+            <div class="input-box">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="gênero"><strong>Gênero:</strong></label>
+                <select name="gênero" id="gênero" required>
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="cpf"><strong>CPF:</strong></label>
+                <input type="text" name="cpf" id="cpf">
+              </div>
+
+            <div class="input-box">
+                <label for="idade"><strong>Idade:</strong></label>
+                <input type="text" name="idade" id="idade" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="data-nascimento"><strong>Data de nascimento:</strong></label>
+                <input type="date" name="data-nascimento" id="data-nascimento" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="endereço"><strong>Endereço:</strong></label>
+                <input type="text" name="endereço" id="endereço" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="cep"><strong>CEP:</strong></label>
+                <input type="text" name="cep" id="cep" pattern="\d{5}-\d{3}" title="Digite um CEP no formato: 12345-678" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="convênio"><strong>Convênio:</strong></label>
+                <input type="text" name="convênio" id="convênio" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="diabetes"><strong>Paciente possui diabetes?</strong></label>
+                <select name="diabetes" id="diabetes" required>
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="não">Não</option>
+                </select>
+            </div>
+    
+            <div class="input-box">
+                <label for="medicamentos"><strong>Quais medicamentos o paciente está tomando? (incluindo medicamentos de venda livre)</strong></label>
+                <input type="text" name="medicamentos" id="medicamentos" placeholder="responda aqui" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="motivo-consulta"><strong>Motivo da consulta:</strong></label>
+                <select name="motivo-consulta" id="motivo-consulta" required>
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option value="rotina">Rotina</option>
+                    <option value="acompanhamento">Acompanhamento de tratamento</option>
+                    <option value="avaliação-sintomas">Avaliação de sintomas</option>
+                    <option value="outro">Outros</option>
+                </select>
+            </div>
+    
+            <div class="input-box">
+                <label for="alergias"><strong>Paciente tem alguma alergia a medicamentos ou alimentos?</strong></label>
+                <input type="text" name="alergias" id="alergias" placeholder="responda aqui" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="doença-importante"><strong>Paciente já teve alguma doença importante? Se sim, qual?</strong></label>
+                <select name="doença-importante" id="doença-importante" required>
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="não">Não</option>
+                </select>
+                <input type="text" name="doença-importante-outro" id="doença-importante-outro" placeholder="responda aqui" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="fuma"><strong>Paciente fuma? (Cigarros, cigarros eletrônicos, etc.)</strong></label>
+                <select name="fuma" id="fuma" required>
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="não">Não</option>
+                </select>
+            </div>
+    
+            <div class="input-box">
+                <label for="historico-familiar"><strong>Histórico familiar de doença?</strong></label>
+                <input type="text" name="historico-familiar" id="historico-familiar" placeholder="responda aqui" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="observacoes"><strong>Outras observações:</strong></label>
+                <textarea rows="6" style="width: 26em" id="observacoes" name="observacoes"></textarea>
+            </div>
+        <button class="botao" type="submit">Finalizar Cadastro</button>
+            
+        </div>
+        
+    </form>
+    
+    </form>
+    
+           </div>
+       </form>
+   </main>
+   
+   <footer>
+       <div class="cabecalho__logo">
+           <img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px">
+       </div>
+       <div>
+           <ul>
+               <li><a href="#" class="link__footer">Contato</a></li>
+               <li><a href="#" class="link__footer">Quem somos</a></li>
+               <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+           </ul>
+       </div>
+   </footer>
+
+   <div id="result"></div>
+   <script type='module' src="../../controller/editarPaciente-controller.js"></script>
+   <script src="js.js"></script>
+</body>
+</html>

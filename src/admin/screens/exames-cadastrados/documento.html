@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.16/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Documento preview</title>
+</head>
+<body>
+
+<header class="cabecalho">
+        <div class="cabecalho__logo"><img src="assets/imgs/54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+        <div >
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+              </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data" ></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="assets/imgs/user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+            <li>
+                <div class="dropdown">
+                     <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                     <div class="dropdown-content">
+                       <a href="#">Menu Inicial</a>
+                       <a href="#">Digitar Pedidos</a>
+                       <a href="#">Exames Pendentes</a>
+             <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+ 
+                       
+                     </div>
+            </li>
+ 
+        </ul>
+</header>
+
+<main>
+    <div id="pdf-preview">
+        <div id="pacientes-container"></div>
+        <canvas id="pdf-canvas"></canvas>
+    </div>
+</main>
+<footer>
+    <div class="cabecalho__logo"><img src="assets/imgs/54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+        <div >
+    <ul>
+      <li><a href="#" class="link__footer">Contato</a></li>
+      <li><a href="#" class="link__footer">Quem somos</a></li>
+      <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+    </ul>
+</footer>
+    <script type = 'module' src="../../service/documentService.js"></script>
+    
+</body>
+</html>

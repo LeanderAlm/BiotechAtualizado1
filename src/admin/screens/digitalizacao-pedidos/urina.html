@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exame de Urina</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><a href="../Pagina inicial/index.html"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></a></div>
+        <div >
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+              </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data"></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+            <li>
+              <div class="dropdown">
+                   <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                   <div class="dropdown-content">
+                     <a href="#">Menu Inicial</a>
+                     <a href="#">Digitar Pedidos</a>
+                     <a href="#">Exames Pendentes</a>
+           <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+
+                     
+                   </div>
+          </li>
+        </ul>
+</header>
+
+<main class="div__main">
+    <div class="div-1">
+      <p class="h5-div1">Exames de Urina</p>
+      <div class="org__div1">
+        <form id="exame-form">
+          <input type="text" name="corurina" id="corurina" class="input__div1" placeholder="Cor">
+          <input type="text" name="aspectourina" id="aspectourina" class="input__div1" placeholder="Aspecto">
+          <input type="text" name="densidadeurina" id="densidadeurina" class="input__div1" placeholder="Densidade">
+          <input type="text" name="phurina" id="phurina" class="input__div1" placeholder="pH">
+          <input type="text" name="proteinasurina" id="proteinasurina" class="input__div1" placeholder="Proteínas">
+          <input type="text" name="glicoseurina" id="glicoseurina" class="input__div1" placeholder="Glicose">
+          <input type="text" name="cetonasurina" id="cetonasurina" class="input__div1" placeholder="Cetonas">
+          <input type="text" name="bilirrubinaurina" id="bilirrubinaurina" class="input__div1" placeholder="Bilirrubina">
+          <input type="text" name="urobilinogeniourina" id="urobilinogeniourina" class="input__div1" placeholder="Urobilinogênio">
+          <input type="text" name="hemaciasurina" id="hemaciasurina" class="input__div1" placeholder="Hemácias">
+          <input type="text" name="leucocitosurina" id="leucocitosurina" class="input__div1" placeholder="Leucócitos/campo">
+          <input type="text" name="nitritourina" id="nitritourina" class="input__div1" placeholder="Nitrito">
+          <input type="text" name="celulasepiteliaisurina" id="celulasepiteliaisurina" class="input__div1" placeholder="Células epiteliais:">
+          <input type="text" name="cilindrosurina" id="cilindrosurina" class="input__div1" placeholder="Cilindros">
+          <input type="text" name="cristaisurina" id="cristaisurina" class="input__div1" placeholder="Cristais">
+          <input type="text" name="bacteriasurina" id="bacteriasurina" class="input__div1" placeholder="Bactérias">
+          <button type="submit" class="button__div1">Validar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+
+    <footer>
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+            <div >
+        <ul>
+          <li><a href="#" class="link__footer">Contato</a></li>
+          <li><a href="#" class="link__footer">Quem somos</a></li>
+          <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+        </ul>
+    </footer>
+        <script type = 'module' src="../../controller/cadastroResultadoUrina-controller.js"></script>
+        <script src="js.js"></script>
+    </body>
+    </html>

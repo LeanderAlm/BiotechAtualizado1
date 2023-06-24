@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+.cabecalho {
+  background-color: #5899D6;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecalho__pesquisar {
+  margin-top: .5rem;
+}
+
+.cabecalho__list {
+  display: flex;
+  margin: 1.5rem;
+  align-items: center;
+}
+
+.cabecalho__item {
+  padding-left: 2rem;
+}
+
+input[type="text"] {
+  margin-top: .6rem;
+  width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+main{
+    background-color: #35465A;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+  background-color: #5899D6;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link__footer {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link__footer:hover {
+  transition: .9s;
+  font-size: 18px;
+}
+
+
+  
+  .button__div1:hover {
+    background-color: #4CAF50;
+  }
+  
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .cabecalho {
+    flex-direction: column;
+    height: auto;
+  }
+  .cabecalho__pesquisar {
+    margin-top: 1rem;
+  }
+  input[type="text"] {
+    width: 100%;
+    max-width: none;
+  }
+  .cabecalho__list {
+    margin: 1rem 0;
+  }
+  .cabecalho__item {
+    padding-left: 0;
+    margin-right: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  /* Estilos adicionais para tornar o footer responsivo */
+  footer {
+    flex-direction: column;
+  }
+  
+  .link__footer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5899D6;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0;
+  transition:  0.5s ease;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  border: 2px solid #FFFFFF; 
+}
+
+  .cabecalho__item{
+    padding: 20px;
+  }

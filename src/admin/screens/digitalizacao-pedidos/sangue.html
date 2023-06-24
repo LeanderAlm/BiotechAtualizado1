@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exame de Sangue</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><a href="../Pagina inicial/index.html"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></a></div>
+        <div >
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+              </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data"></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+            <li>
+                <div class="dropdown">
+                     <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                     <div class="dropdown-content">
+                       <a href="#">Menu Inicial</a>
+                       <a href="#">Digitar Pedidos</a>
+                       <a href="#">Exames Pendentes</a>
+             <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+ 
+                       
+                     </div>
+            </li>
+        </ul>
+</header>
+
+<main class="div__main">
+    <div class="div-1">
+      <p class="h5-div1">Exames de Sangue</p>
+      <form id="exame-form" class="org__div1">
+        <input type="text" name="hemoglobina" id="hemoglobina" class="input__div1" placeholder="Hemoglobina g/dL" required>
+        <input type="text" name="tsh" id="tsh" class="input__div1" placeholder="TSH mU/L" required>
+        <input type="text" name="hematocritos" id="hematocritos" class="input__div1" placeholder="Hematocritos" required>
+        <input type="text" name="t4total" id="t4total" class="input__div1" placeholder="T4 Total ng/dL" required>
+        <input type="text" name="leucocitos" id="leucocitos" class="input__div1" placeholder="Leucócitos mm3" required>
+        <input type="text" name="t4" id="t4" class="input__div1" placeholder="T4 ng/dL" required>
+        <input type="text" name="plaquetas" id="plaquetas" class="input__div1" placeholder="Plaquetas mm3" required>
+        <input type="text" name="alt" id="alt" class="input__div1" placeholder="ALT U/L" required>
+        <input type="text" name="reticulocitos" id="reticulocitos" class="input__div1" placeholder="Reticulócitos %" required>
+        <input type="text" name="ast" id="ast" class="input__div1" placeholder="AST U/L" required>
+        <input type="text" name="colesteroltotal" id="colesteroltotal" class="input__div1" placeholder="Colesterol total mg/dL" required>
+        <input type="text" name="tgp" id="tgp" class="input__div1" placeholder="TGP U/L" required>
+        <input type="text" name="hdlcolesterol" id="hdlcolesterol" class="input__div1" placeholder="HDL-colesterol mg/dL" required>
+        <input type="text" name="tgo" id="tgo" class="input__div1" placeholder="TGO U/L" required>
+        <input type="text" name="ldlcolesterol" id="ldlcolesterol" class="input__div1" placeholder="LDL-colesterol" required>
+        <input type="text" name="triglicerideos" id="triglicerideos" class="input__div1" placeholder="Triglicerídeos mg/dL" required>
+        <input type="text" name="glicemiajejum" id="glicemiajejum" class="input__div1" placeholder="Glicemia em jejum mg/dL" required>
+        <input type="text" name="glicemiaposprandial" id="glicemiaposprandial" class="input__div1" placeholder="Glicemia pós-prandial: mg/DL" required>
+        <button type="submit" class="button__div1">Validar</button>
+      </form>
+    </div>
+  </main>
+  
+  
+
+    <footer>
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+            <div >
+        <ul>
+          <li><a href="#" class="link__footer">Contato</a></li>
+          <li><a href="#" class="link__footer">Quem somos</a></li>
+          <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+        </ul>
+    </footer>
+        <script type = 'module' src="../../controller/cadastroResultadoSangue-controller.js"></script>
+        <script src="js.js"></script>
+    </body>
+    </html>

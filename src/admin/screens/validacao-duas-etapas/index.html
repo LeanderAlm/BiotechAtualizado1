@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Validação em duas etapas</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+        <div >
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+              </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data" ></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+
+            <li>
+                <div class="dropdown">
+                     <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                     <div class="dropdown-content">
+                       <a href="#">Menu Inicial</a>
+                       <a href="#">Digitar Pedidos</a>
+                       <a href="#">Exames Pendentes</a>
+             <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+ 
+                       
+                     </div>
+            </li>
+        </ul>
+</header>
+
+
+
+
+<main class="main__form">
+    <h1>Validação em Duas etapas</h1>
+    <form action="" class="form__doencas">
+        <select name="doencas" id="select__doencas" class="select__doencas" required>
+            <option value="escolha">----ESCOLHA UM EXAME----</option>
+            <option value="hiv">HIV</option>
+            <option value="sifilis">Sifilis</option>
+            <option value="paternidade">Paternidade</option>
+            <option value="covid">Covid</option>
+        </select>
+
+        <label for="cpf"></label>
+        <input type="text" id="cpf" name="CPF" placeholder="Digite o CPF do paciente" pattern="[0-9]{11}" title="Digite um CPF válido de 11 dígitos" required>
+
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Digite o nome do paciente" required>
+
+        <div class="div__p">
+            <p>Validação pelo primeiro profissional:</p>
+            <input type="text" name="prof1" id="prof1" placeholder="Profissional 1"  required>
+        </div>
+        <div class="radio-group radio1">
+          <input type="radio" id="opcao1" name="opcao1" value="positivo">
+          <label for="opcao1">Positivo</label>
+        
+          <input type="radio" id="opcao2" name="opcao1" value="negativo">
+          <label for="opcao2">Negativo</label>
+        </div>
+        
+        <div class="div__p">
+            <p>Validação pelo segundo profissional:</p>
+            <input type="text" name="prof2" id="prof2" placeholder="Profissional 2" required>
+        </div>
+        <div class="radio-group radio2">
+        <input type="radio" id="opcao3" name="opcao" value="positivo">
+        <label for="opcao3">Positivo</label>
+
+        <input type="radio" id="opcao4" name="opcao" value="negativo">
+        <label for="opcao4">Negativo</label> 
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</main>
+
+
+<footer>
+    <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt="" height="80px"></div>
+        <div >
+    <ul class="list__footer">
+      <li class="item__footer"><a href="#" class="link__footer">Contato</a></li>
+      <li class="item__footer"><a href="#" class="link__footer">Quem somos</a></li>
+      <li class="item__footer"> <a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+    </ul>
+</footer>
+    <script src="js.js"></script>
+</body>
+</html>

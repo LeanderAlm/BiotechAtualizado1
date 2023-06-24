@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt=""
+                height="80px"></div>
+        <div>
+            <form class="cabecalho__pesquisar">
+                <input type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+            </form>
+        </div>
+        <ul class="cabecalho__list">
+            <li class="cabecalho__item data"></li>
+            <li class="cabecalho__item">
+                <div class="image__profile">
+                    <img src="user.png" alt="" height="35px">
+                </div>
+            </li>
+            <li class="cabecalho__item">SAIR</li>
+
+            <li>
+                <div class="dropdown">
+                     <img src="../exames-cadastrados/assets/imgs/menu.png" alt="Menu" class="dropbtn" height="35px">
+                     <div class="dropdown-content">
+                       <a href="#">Menu Inicial</a>
+                       <a href="#">Digitar Pedidos</a>
+                       <a href="#">Exames Pendentes</a>
+             <a href="../validacao-duas-etapas/">Validação em duas etapas</a>
+ 
+                       
+                     </div>
+            </li>
+
+
+        </ul>
+    </header>
+
+
+
+    <main>
+
+
+        <form class="dados" action="examespendentes.html" method="GET">
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1">
+                    <label for="Profissional">Profissional</label>
+                    <input type="text" name="Profissional" id="Profissional" placeholder="nome do profissional de saúde"
+                        required>
+                </div>
+
+
+                <div class="flexbox-item flexbox-item-3">
+                    <label for="Paciente">Paciente</label>
+                    <input type="text" name="Paciente" id="Paciente" placeholder="nome do paciente" required>
+                </div>
+
+                <div class="flexbox-item flexbox-item-4">
+                    <select name="doencas" id="select__doencas" class="select__doencas" required>
+                        <option value="escolha">----MATERIAIS PARA RECOLETA----</option>
+                        <option value="sangue">SANGUE</option>
+                        <option value="urina">URINA</option>
+                        <option value="fezes">FEZES</option>
+                    </select>
+                </div>
+
+                <div class="flexbox-item flexbox-item-5">
+                    <label for="Exame"></label>
+                    <input id="Exame" type="file" name="Exame">
+                </div>
+
+                <div class="flexbox-item flexbox-item-6">
+                    <label for="Data"></label>
+                    <input type="date" name="Data" id="Data" required>
+                </div>
+
+                <div class="flexbox-item flexbox-item-7">
+                    <button type="reset">limpar</button>
+                    <button type="submit">solicitar</button>
+                </div>
+
+
+            </div>
+
+
+        </form>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="cabecalho__logo"><img src="54d13027-2c33-4073-b04a-22f8c13ea47b-image - cópia.png" alt=""
+                height="80px"></div>
+        <div>
+            <ul>
+                <li><a href="#" class="link__footer">Contato</a></li>
+                <li><a href="#" class="link__footer">Quem somos</a></li>
+                <li><a href="#" class="link__footer">PUC MINAS - ADS</a></li>
+            </ul>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

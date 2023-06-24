@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.cabecalho{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__pesquisar{
+    margin-top: .5rem;
+   
+}
+
+
+.cabecalho__list{
+    display: flex;
+    margin: 1.5rem;
+    align-items: center;
+}
+
+.cabecalho__item{
+
+  padding-left: 2rem;
+}
+
+input[type="text"] {
+    margin-top: .6rem;
+    width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+main{
+    
+    background-color: #35465A;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer{
+    background-color: #5899D6;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+
+.div__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.link__footer{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link__footer:hover{
+    transition: .9s;
+    font-size: 18px;
+}
+
+.input__data {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    
+  }
+  
+  .button__data {
+    width: 150px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .button__data:hover {
+    background-color: #004084;
+    transition: .6s;
+  }
+
+  .title{
+    align-self: center;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5899D6;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transition:  0.5s ease;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    border: 2px solid #FFFFFF; 
+  }
+  
+  .cabecalho__item{
+    padding: 20px;
+  }

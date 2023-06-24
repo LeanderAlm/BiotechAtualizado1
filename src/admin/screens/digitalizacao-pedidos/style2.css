@@ -1,0 +1,159 @@
+.div__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-between;
+   padding: 1.2rem 0px; 
+  
+}
+
+
+.div-1 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.org__div1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.input__div1 {
+  width: 100%;
+}
+
+button.button__div1 {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30%;
+}
+
+
+.div-2{
+    background-color: #5899D6;
+    border-radius: 5%;
+    width: 30vw;
+    height: 74vh;
+}
+
+.div-3{
+    background-color: #5899D6;
+    border-radius: 5%;
+    width: 30vw;
+    height: 74vh;
+}
+
+  
+  .h5-div1{
+    padding-bottom: 2rem;
+    font-size: medium;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .div-1 input[type="text"] {
+    width: 50%;
+   height: 20px;
+   margin-left: 3rem;
+   flex-direction: column;
+   align-items: center;
+   
+  
+  }
+
+  .input__div1::placeholder {
+    font-size: 12px}
+
+.footer__button{
+  height: .5vh;
+  background-color: #35465A;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button1 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 29%;
+  height: 40px;
+  background-color: #FF4646;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #fc0000;
+}
+
+.button1:active {
+  background-color: #FF3333;
+}
+
+
+.button2 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 29%;
+  height: 40px;
+  background-color: #006400;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #004700;
+}
+
+.button2:active {
+  background-color: #004f00;
+}
+
+.h3-div2{
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.div-2 input[type="text"] {
+  width: 30%;
+ height: 20px;
+ margin-left: 3rem;
+ 
+}
+
+.form__div2{
+  margin-bottom: 3rem;
+}
+
+
+  .input__div2-5 {
+    width: 80% !important;
+    height: 12% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 5px !important;
+  }
+  
+
+  
